@@ -44,7 +44,7 @@ class UpdateNotifierPlugin extends BasePlugin
      */
     public function getDocumentationUrl()
     {
-        return 'https://github.com/fork/updatenotifier/blob/master/README.md';
+        return 'https://github.com/fork/craft-updatenotifier/blob/master/README.md';
     }
 
     /**
@@ -52,7 +52,7 @@ class UpdateNotifierPlugin extends BasePlugin
      */
     public function getReleaseFeedUrl()
     {
-        return 'https://raw.githubusercontent.com/fork/updatenotifier/master/releases.json';
+        return 'https://raw.githubusercontent.com/fork/craft-updatenotifier/master/releases.json';
     }
 
     /**
