@@ -6,5 +6,14 @@
         "notes": [
             "[Added] Initial release"
         ]
+    },
+    {
+        "version": "1.0.1",
+        "downloadUrl": "https://github.com/fork/craft-updatenotifier/archive/1.0.1.zip",
+        "date": "2017-09-15T14:30:19.235Z",
+        "notes": [
+            "[Added] Craft Email formatting",
+            "[Added] Some more README instructions"
+        ]
     }
 ]

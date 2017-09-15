@@ -20,4 +20,13 @@ To install Update Notifier, follow these steps:
 0 0 * * * /usr/local/bin/php /var/www/my-site/craft/app/etc/console/yiic updatenotifier check
 ```
 
+if you have a custom config path (which includes the necessary license.key file for the update check) you can tell yiic:
+
+```
+0 0 * * * /usr/local/bin/php /var/www/my-site/craft/app/etc/console/yiic --configPath=/var/www/my-site/craft/config/custom-dir/ updatenotifier check
+```
+
+
+
+
 Brought to you by [Fork Unstable Media GmbH](http://fork.de)
