@@ -14,10 +14,10 @@ To install Update Notifier, follow these steps:
 ## Configuring Update Notifier
 
 1. Setup your notification email adresses as a comma separated list in the plugin settings.
-2. Setup a cronjob in the crontab to run the update check command (for example daily):
+2. Setup a cronjob in the crontab to run the update check command (for example daily). use `which php` to find your php executable path.
 
 ```
-0 0 * * * /var/www/my-site/craft/app/etc/console/yiic updatenotifier check
+0 0 * * * /usr/local/bin/php /var/www/my-site/craft/app/etc/console/yiic updatenotifier check
 ```
 
 Brought to you by [Fork Unstable Media GmbH](http://fork.de)

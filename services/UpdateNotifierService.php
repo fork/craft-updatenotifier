@@ -54,6 +54,15 @@ class UpdateNotifierService extends BaseApplicationComponent
         // craft renders the content in twig if htmlBody is set. this allows twig expressions in update notes without evaluating them
         $content = '{% verbatim %}' . $content . '{% endverbatim %}';
 
+        // use craft email template
+        craft()->templates->setTemplateMode(TemplateMode::CP);
+        $template = '_special/email';
+
+        $content = "{% extends '{$template}' %}\n".
+            "{% set body %}\n".
+            $content.
+            "{% endset %}\n";
+
         $subject = $settings->getAttribute('alternativeEmailSubject') ?: 'Craft Update Notifier ' . craft()->getSiteName();
 
         foreach ($notificationEmails as $notificationEmail) {
