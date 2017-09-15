@@ -1,0 +1,31 @@
+{#
+/**
+ * Update Notifier plugin for Craft CMS
+ *
+ * Update Notifier Settings.twig
+ *
+ * @author    Fork Unstable Media GmbH
+ * @copyright Copyright (c) 2017 Fork Unstable Media GmbH
+ * @link      http://fork.de
+ * @package   UpdateNotifier
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: 'Notification Email Addresses (comma separated)',
+    instructions: 'Enter a comma separated list of Email Adresses which should receive update notifications.',
+    id: 'notificationEmails',
+    name: 'notificationEmails',
+    value: settings['notificationEmails']})
+}}
+
+{{ forms.textField({
+    label: 'Alternative Email Subject',
+    instructions: 'If a custom Email Subject needs to be set (otherwise a generic one with the Site name included is used).',
+    id: 'alternativeEmailSubject',
+    name: 'alternativeEmailSubject',
+    value: settings['alternativeEmailSubject']})
+}}
