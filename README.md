@@ -4,6 +4,13 @@
   </a>
 </div>
 
+# Project discontinued! (its Craft 2...)
+But if you need an easy way to retrieve updates, here's a cronjob command:
+
+```
+0 8 * * 1-5 printf "From: My Website <my-website@example.com>\nTo: Me <me@example.com>\nSubject: Available Craft Updates\n$(~/my-project/site/craft update/info)" | /usr/sbin/sendmail -t
+```
+---
 # Update Notifier plugin for Craft CMS
 
 a craft cms plugin that checks for updates in craft core and installed plugins and sends out notifications (via email)
